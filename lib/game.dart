@@ -302,7 +302,7 @@ class _GameState extends State<Game> with SingleTickerProviderStateMixin {
   }
 
   double generateRandomRadianToSpinTo() {
-    return (2 * math.pi * sectors.length) * sectorRadians[randomSectorIndex];
+    return (2 * math.pi * sectors.length) + sectorRadians[randomSectorIndex];
   }
 
   void resetGame() {
